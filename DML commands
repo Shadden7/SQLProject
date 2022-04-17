@@ -1,0 +1,21 @@
+INSERT INTO contries (code_ , name_, country_name)
+VALUE ('1111', 'shaden' , 'SA');
+
+INSERT INTO users (id,full_name,email,gender,date_of_birth,created_at,country_code)
+VALUE ('1','shaden alharbi','shaden_ss@outlook.sa','M','10 april','22-4-17 02:00:00' ,1111);
+
+INSERT INTO orders (id , user_id , status_ , created_at)
+VALUE ('1','1','start','22-4-17 02:00:00');
+
+INSERT INTO product (id , name_ , price , status_ , created_at)
+VALUE ('1', 'shaden','50','valid','22-4-17 02:00:00');
+
+INSERT INTO order_products (order_id,product_id,quantity)
+VALUE ('1','1','1');
+
+UPDATE contries
+SET name_ = leen 
+WHERE code_ = 1111;
+
+DELETE FROM product 
+WHERE name_ = 'shaden';
